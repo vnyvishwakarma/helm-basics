@@ -3,9 +3,9 @@
      zone: a,b,c
      region: us-e
    
-   
+ ```sh  
  {{ if eq .Values.infra.region "us-e" }}ha: true{{ end }}
- 
+ ```
  
  
  helm install --dry-run --debug controlif ./mychart
