@@ -8,9 +8,9 @@ rm -rf mychart/templates/*
 
 configmap.yaml
 ~~~~~~~~~~~~~
-```sh
- 
 
+
+```sh
 apiVersion: v1
 kind: ConfigMap
 metadata:
