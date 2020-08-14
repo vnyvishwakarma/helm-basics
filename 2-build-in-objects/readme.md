@@ -10,7 +10,7 @@ Below are the URLs
    zone: a,b,c
    region: us-e
  
- ```sh
+```sh
 apiVersion: v1
 kind: ConfigMap
 metadata:
