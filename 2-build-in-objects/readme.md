@@ -35,15 +35,25 @@ costCode: {{ .Values.costCode }}
 ```
  
 helm install --debug --dry-run firstdryrun ./mychart
+
 helm install firstvalue ./mychart
+
 helm get manifest firstvalue
+
 kubectl describe configmaps firstvalue-configmap
+
 
 ################################################################
 
+
  helm install --dry-run --debug --set costCode=CC00000 valueseteg ./mychart
+ 
  helm install valueseteg ./mychart --set costCode=CC00000 
+
  helm get manifest valueseteg
+
  kubectl describe configmaps valueseteg-configmap
+
  helm ls
+
 helm uninstall valueseteg
