@@ -5,10 +5,6 @@ Below are the URLs
   - https://helm.sh/docs/chart_template_guide/builtin_objects/
 
  ```sh
- projectCode: aazzxxyy
- infra:
-   zone: a,b,c
-   region: us-e
  
 
 apiVersion: v1
