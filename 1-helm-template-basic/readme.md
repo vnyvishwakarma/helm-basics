@@ -1,5 +1,6 @@
+
 helm create mychart
-helm create mycharttemp
+
 
 rm -rf mychart/templates/*
 
@@ -7,22 +8,20 @@ rm -rf mychart/templates/*
 
 configmap.yaml
 ~~~~~~~~~~~~~
-
+ ```sh
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mychart-configmap
 data:
   myvalue: "Sample Config Map"
-  
-  
-  
+```
+
 helm install helm-demo-configmap ./mychart
 
 helm ls
 
 kubectl get all
-
 
 helm get manifest helm-demo-configmap
 
