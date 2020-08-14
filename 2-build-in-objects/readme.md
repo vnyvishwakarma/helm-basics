@@ -20,9 +20,13 @@ data:
 ```
 
 helm install releasename-test ./mychart
+
 helm get manifest releasename-test
+
 helm install --debug --dry-run dryrun-test ./mychart
+
 kubectl describe configmaps releasename-test-configmap
+
 helm uninstall releasename-test
 
 ################################################################
